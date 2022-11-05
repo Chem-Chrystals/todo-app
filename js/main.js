@@ -90,6 +90,7 @@ const addToDo = () => {
             <p>${value}</p>`;
       }
     });
+    // refresh TO-DO list
     // add result class for styling
     div.classList.add("result");
 
@@ -121,6 +122,7 @@ all.addEventListener("click", (e) => {
   active.classList.remove("active");
   completed.classList.remove("active");
   current = "";
+  // refresh TO-DO list
   addToDo();
 });
 
@@ -131,6 +133,7 @@ active.addEventListener("click", (e) => {
   all.classList.remove("active");
   active.classList.add("active");
   completed.classList.remove("active");
+  // refresh TO-DO list
   addToDo();
 });
 
@@ -141,11 +144,13 @@ completed.addEventListener("click", (e) => {
   all.classList.remove("active");
   active.classList.remove("active");
   completed.classList.add("active");
+  // refresh TO-DO list
   addToDo();
 });
 
 // clear completed tasks
 clear.addEventListener("click", () => {
   todoValue = todoValue.filter(({ completed }) => !completed);
+  // refresh TO-DO list
   addToDo();
 });
