@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+      rel="stylesheet"
+    />
+    <title>To-Do List</title>
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body>
+    <div class="body"></div>
+    <section class="container">
+      <div class="todo-container">
+        <div class="todo-header">
+          <h1>TODO</h1>
+          <img src="./images/icon-sun.svg" alt="toggle" class="toggle" />
+        </div>
+        <form
+         class="todo-input">
+          <span class="check-input"></span>
+          <input type="text" placeholder="Create a new todo..." />
+        </form>
+        <div class="result-container">
+          <div class="results">
+          </div>
+          <div class="metrics">
+            <p><span>5</span> items left</p>
+            <div class="filter">
+              <p class="active" id="all">All</p>
+              <p id="active">Active</p>
+              <p id="completed">Completed</p>
+          </div>
+            <p id="clear">Clear Completed</p>
+        </div>
+      </div>
+    </section>
+    <script src="./js/main.js"></script>
+  </body>
+</html>
